@@ -13,9 +13,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(KankyuTransit.MOD_ID)
+@Mod(KankyuTransit.ID)
 public class KankyuTransit {
-    public static final String MOD_ID = "kankyutransit";
+    public static final String ID = "kankyutransit";
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -42,7 +42,7 @@ public class KankyuTransit {
 
     }
 
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @Mod.EventBusSubscriber(modid = ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
